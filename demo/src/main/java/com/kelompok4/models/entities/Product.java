@@ -2,6 +2,7 @@ package com.kelompok4.models.entities;
 
 import java.io.Serializable;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,8 +17,10 @@ public class Product implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "product_name", length = 100)
     private String name;
 
+    @Column(name = "product_desc", length = 500)
     private String description;
 
     private double price;

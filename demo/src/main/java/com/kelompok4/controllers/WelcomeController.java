@@ -11,7 +11,7 @@ public class WelcomeController {
 
     @GetMapping
     public String welcome(){
-        return "Welcome to Spring Boor Rest API, Kelompok 3";
+        return "Welcome to Spring Boot Rest API, Kelompok 3";
     }
     
 
